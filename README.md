@@ -14,6 +14,7 @@ Weekly tasks for the Computer Vision Mentorship Program.
 - `main.py` - Main script
 - `Image.jpg` - Sample image
 - `Video.mp4` - Sample video
+- 'output_video.mp4 - Output video
 
 ## How to Run
 1. Install OpenCV: `pip install opencv-python`
