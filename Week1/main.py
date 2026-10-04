@@ -1,6 +1,15 @@
 import cv2 as cv
 Video= cv.VideoCapture('Video.mp4')
 
+# 2. Video Properties
+fps = int(Video.get(cv.CAP_PROP_FPS))
+width = int(Video.get(cv.CAP_PROP_FRAME_WIDTH))
+height = int(Video.get(cv.CAP_PROP_FRAME_HEIGHT))
+
+# 3. Writer of  Video
+fourcc = cv.VideoWriter_fourcc(*'mp4v')   # MP4 codec
+out = cv.VideoWriter('output_video.mp4', fourcc, fps, (width, height))
+
 while True:
     ret, frame = Video.read()
     
@@ -13,6 +22,9 @@ while True:
     #showing Text
     cv.putText(frame, 'Hello', (100,100), cv.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
 
+    #Write frames on output video
+    out.write(frame)
+    
     #show frames 
     cv.imshow('My Video', frame)
 
