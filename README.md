@@ -4,18 +4,7 @@ Computer Vision Mentorship Program - Weekly Tasks"
 
 Weekly tasks for the Computer Vision Mentorship Program.
 
-## Week 1
-- Read an image and display it
-- Read a video frame by frame
-- Draw rectangle and text on frames
-- Save output video
+## Weeks
 
-## Files
-- `main.py` - Main script
-- `Image.jpg` - Sample image
-- `Video.mp4` - Sample video
-- 'output_video.mp4 - Output video
-
-## How to Run
-1. Install OpenCV: `pip install opencv-python`
-2. Run: `python main.py`
+- [Week 1](./Week1/) - Image/Video basics, OpenCV, drawing on frames
+- [Week 2](./Week2/) - Object detection with YOLO
