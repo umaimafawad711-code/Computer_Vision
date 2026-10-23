@@ -8,3 +8,4 @@ Weekly tasks for the Computer Vision Mentorship Program.
 
 - [Week 1](./Week1/) - Image/Video basics, OpenCV, drawing on frames
 - [Week 2](./Week2/) - Object detection with YOLO
+- [Week 3](./Week3/) - Testing YOLO on harder videos & Model comparison (11n vs 11x)
