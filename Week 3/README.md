@@ -17,7 +17,7 @@ This week's task was to test a YOLO model under difficult conditions and compare
 - `compare_models.ipynb`: The Colab notebook used for the sweep.
 - `main.py`: Script to detect people in the noisy video.
 - `make_video.py`: Script that generated the dark, blur, and noise videos.
-- `video.mp4` / `output_video.mp4`: Original video and the YOLO detected output.
+- `video.mp4` / `output_video.mp4`: Original video and the YOLO detected output of noise video only.
 
 ## Results Summary
 - **Harder Videos:** Noise, blur, and darkness significantly reduced the number of detected persons (especially for YOLO11n).
