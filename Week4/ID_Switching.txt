@@ -1,0 +1,6 @@
+Question: What you think when ID changes ?
+According to my observation, the ID changed from 1 to 4 because of a temporary loss of track. When the person in the red hoodie walked out of the camera frame (or got blocked), the tracker lost his motion history.
+
+ByteTrack mainly relies on continuous motion to predict where a person will be in the next frame. Because he disappeared for a few seconds, the model forgot his previous identity. When he re-entered the frame, the model couldn't match his face/clothes with the old ID, so it considered him as a brand new person and assigned him a new ID (4).
+
+This is known as an ID Switch and it proves why manual counting (3 people) is different from the tracker's count (4 unique IDs)
